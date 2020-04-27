@@ -21,7 +21,6 @@ class FYPageBaseViewController: FYBaseViewController {
     
    
     lazy var pagingView: JXPagingView = preferredPagingView()
-    lazy var userHeaderView: PagingViewTableHeaderView = preferredTableHeaderView() //顶部的header
     let dataSource: JXSegmentedTitleDataSource = JXSegmentedTitleDataSource()
     lazy var segmentedView: JXSegmentedView = JXSegmentedView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: CGFloat(headerInSectionHeight)))
     
@@ -53,10 +52,6 @@ class FYPageBaseViewController: FYBaseViewController {
         
     }
     
-    func preferredTableHeaderView() -> PagingViewTableHeaderView {
-        return PagingViewTableHeaderView()
-    }
-    
     func preferredPagingView() -> JXPagingView {
         return JXPagingView(delegate: self)
     }
@@ -71,7 +66,7 @@ extension FYPageBaseViewController: JXPagingViewDelegate {
     }
 
     func tableHeaderView(in pagingView: JXPagingView) -> UIView {
-        return userHeaderView
+        return UIView.init()
     }
 
     func heightForPinSectionHeader(in pagingView: JXPagingView) -> Int {
@@ -110,15 +105,3 @@ extension FYPageBaseViewController: JXPagingMainTableViewGestureDelegate {
 }
 
 
-class PagingViewTableHeaderView: UIView {
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    
-    
-}

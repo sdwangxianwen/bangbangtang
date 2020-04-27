@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import JXPagingView
 
 
 
@@ -15,6 +15,7 @@ class FYHomeViewController: FYPageBaseViewController {
     
     var homeDataModel : dataModel!
     lazy var serachView : UIView = UIView.init()
+    lazy var userHeaderView: FYHomeHeaderView = preferredTableHeaderView() //顶部的header
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.setNavigationBarHidden(true, animated: false)
@@ -24,10 +25,8 @@ class FYHomeViewController: FYPageBaseViewController {
         serachView.isHidden = true
  
         FYNetManager.shared.post(target: .feedList) { (response) in
-            
             self.homeDataModel = try! JSONDecoder().decode(dataModel.self, from: response as! Data)
             let arrm = NSMutableArray.init()
-            
             for titles : customTabListModel  in self.homeDataModel.customTabList {
                 arrm.add(titles.tabName)
             }
@@ -36,16 +35,29 @@ class FYHomeViewController: FYPageBaseViewController {
             self.dataSource.reloadData(selectedIndex: 0)
             self.segmentedView.defaultSelectedIndex = 0
             self.segmentedView.reloadData()
+            self.userHeaderView.reloadBanner(bannerArr: self.homeDataModel.headerItem.bannerList)
         }
         
     }
     func mainTableViewDidScroll(_ scrollView: UIScrollView) {
-        let thresholdDistance: CGFloat = kStatusBarHeight
+        let thresholdDistance: CGFloat = kNavBarHeight
         let percent = scrollView.contentOffset.y/thresholdDistance
         serachView.isHidden = percent < 1
     }
     
-   
+     func preferredTableHeaderView() -> FYHomeHeaderView {
+        let view = FYHomeHeaderView.init(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: 500))
+        view.backgroundColor = .brown
+        return view
+    }
+    
+    override func tableHeaderView(in pagingView: JXPagingView) -> UIView {
+        return userHeaderView
+    }
+    override func tableHeaderViewHeight(in pagingView: JXPagingView) -> Int {
+           return 500
+       }
+    
 }
 
 

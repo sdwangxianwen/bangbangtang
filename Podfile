@@ -11,6 +11,7 @@ pod 'Kingfisher' #图片处理
 pod 'IQKeyboardManagerSwift' #键盘管理
 pod 'JXSegmentedView'
 pod 'JXPagingView/Paging'
+pod 'JXBanner' #轮播图
   # Pods for bangbangtang
 
   target 'bangbangtangTests' do
