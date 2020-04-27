@@ -12,6 +12,7 @@ import CommonCrypto
 
 enum FYNetApi {
   case feedList//登录
+  case shopList //商城首页
 }
 
 extension FYNetApi : TargetType {
@@ -23,7 +24,10 @@ extension FYNetApi : TargetType {
         switch self {
         case .feedList:
             return "4.1/uiforum/getFeedList"
+        case .shopList:
+            return "2.4/uimall/getPrevItemFeedList"
         }
+       
     }
     
     var method: Moya.Method {
@@ -38,6 +42,8 @@ extension FYNetApi : TargetType {
         switch self {
         case .feedList:
         return .requestCompositeParameters(bodyParameters:["num" :1,"feedListType" : "recommend"] , bodyEncoding: JSONEncoding.default, urlParameters: [:])
+        case .shopList:
+            return .requestCompositeParameters(bodyParameters:["boundaryId" :0,"num" : 20,"isapp" : "iOS4.3.0.6"] , bodyEncoding: JSONEncoding.default, urlParameters: [:])
         }
     }
     

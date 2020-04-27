@@ -16,6 +16,8 @@
 		1E3DF1B1245674D000B25138 /* FYPageBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3DF1B0245674D000B25138 /* FYPageBaseViewController.swift */; };
 		1E3DF1BE2456A43A00B25138 /* FYHomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3DF1BD2456A43A00B25138 /* FYHomeHeaderView.swift */; };
 		1E3DF1C6245715FC00B25138 /* FYHomeSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3DF1C5245715FC00B25138 /* FYHomeSearchView.swift */; };
+		1E3DF1C9245722FB00B25138 /* FYShopNormalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3DF1C7245722FB00B25138 /* FYShopNormalCollectionViewCell.swift */; };
+		1E3DF1CD2457274700B25138 /* FYShopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3DF1CC2457274700B25138 /* FYShopModel.swift */; };
 		1E8F2B0824559577001A169B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8F2B0724559577001A169B /* AppDelegate.swift */; };
 		1E8F2B0A24559577001A169B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8F2B0924559577001A169B /* SceneDelegate.swift */; };
 		1E8F2B0F24559577001A169B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E8F2B0D24559577001A169B /* Main.storyboard */; };
@@ -64,6 +66,8 @@
 		1E3DF1B0245674D000B25138 /* FYPageBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FYPageBaseViewController.swift; sourceTree = "<group>"; };
 		1E3DF1BD2456A43A00B25138 /* FYHomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FYHomeHeaderView.swift; sourceTree = "<group>"; };
 		1E3DF1C5245715FC00B25138 /* FYHomeSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FYHomeSearchView.swift; sourceTree = "<group>"; };
+		1E3DF1C7245722FB00B25138 /* FYShopNormalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FYShopNormalCollectionViewCell.swift; sourceTree = "<group>"; };
+		1E3DF1CC2457274700B25138 /* FYShopModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FYShopModel.swift; sourceTree = "<group>"; };
 		1E8F2B0424559577001A169B /* bangbangtang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bangbangtang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E8F2B0724559577001A169B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E8F2B0924559577001A169B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -154,6 +158,14 @@
 				1E3DF1C5245715FC00B25138 /* FYHomeSearchView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		1E3DF1CB2457273500B25138 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1E3DF1CC2457274700B25138 /* FYShopModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		1E8F2AFB24559576001A169B = {
@@ -265,7 +277,9 @@
 		1E8F2B6124559870001A169B /* 1.商城 */ = {
 			isa = PBXGroup;
 			children = (
+				1E3DF1CB2457273500B25138 /* Model */,
 				1E8F2B6224559885001A169B /* FYShopMallViewController.swift */,
+				1E3DF1C7245722FB00B25138 /* FYShopNormalCollectionViewCell.swift */,
 			);
 			path = "1.商城";
 			sourceTree = "<group>";
@@ -554,6 +568,7 @@
 				1E3DF1A12455A07400B25138 /* FYNoteDetailViewController.swift in Sources */,
 				1E8F2B0824559577001A169B /* AppDelegate.swift in Sources */,
 				1E8F2B53245595E4001A169B /* FYBaseViewController.swift in Sources */,
+				1E3DF1C9245722FB00B25138 /* FYShopNormalCollectionViewCell.swift in Sources */,
 				1E8F2B66245598BC001A169B /* FYSearchGoodingViewController.swift in Sources */,
 				1E8F2B5C24559739001A169B /* FYBaseTabBarViewController.swift in Sources */,
 				1E3DF1A72455AB3300B25138 /* FYNetApi.swift in Sources */,
@@ -562,6 +577,7 @@
 				1E8F2B69245598DB001A169B /* FYMeViewController.swift in Sources */,
 				1E8F2B56245595F3001A169B /* ACConfig.swift in Sources */,
 				1E3DF1AF2455D6AA00B25138 /* FYNavgationController.swift in Sources */,
+				1E3DF1CD2457274700B25138 /* FYShopModel.swift in Sources */,
 				1E8F2B6324559885001A169B /* FYShopMallViewController.swift in Sources */,
 				1E3DF1BE2456A43A00B25138 /* FYHomeHeaderView.swift in Sources */,
 				1E8F2B6024559865001A169B /* FYHomeViewController.swift in Sources */,
