@@ -14,14 +14,15 @@ import JXPagingView
 class FYHomeViewController: FYPageBaseViewController {
     
     var homeDataModel : dataModel!
-    lazy var serachView : UIView = UIView.init()
+    lazy var serachView : FYHomeSearchView = FYHomeSearchView.init()
     lazy var userHeaderView: FYHomeHeaderView = preferredTableHeaderView() //顶部的header
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.setNavigationBarHidden(true, animated: false)
-        serachView.backgroundColor = UIColor.purple
+        serachView.backgroundColor = UIColor.white
         serachView.frame = CGRect(x: 0, y: kStatusBarHeight, width: kScreenWidth, height: kNavBarHeight - kStatusBarHeight)
         self.view.addSubview(serachView)
+        serachView.searchBtn.setBackgroundImage(UIImage.init(named: "filter_segment_disable"), for: .normal)
         serachView.isHidden = true
  
         FYNetManager.shared.post(target: .feedList) { (response) in
@@ -43,11 +44,12 @@ class FYHomeViewController: FYPageBaseViewController {
         let thresholdDistance: CGFloat = kNavBarHeight
         let percent = scrollView.contentOffset.y/thresholdDistance
         serachView.isHidden = percent < 1
+        userHeaderView.searchView.isHidden = percent >= 1
     }
     
      func preferredTableHeaderView() -> FYHomeHeaderView {
         let view = FYHomeHeaderView.init(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: 500))
-        view.backgroundColor = .brown
+        view.backgroundColor = .lightGray
         return view
     }
     

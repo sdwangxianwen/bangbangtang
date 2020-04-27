@@ -15,6 +15,7 @@
 		1E3DF1AF2455D6AA00B25138 /* FYNavgationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3DF1AE2455D6AA00B25138 /* FYNavgationController.swift */; };
 		1E3DF1B1245674D000B25138 /* FYPageBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3DF1B0245674D000B25138 /* FYPageBaseViewController.swift */; };
 		1E3DF1BE2456A43A00B25138 /* FYHomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3DF1BD2456A43A00B25138 /* FYHomeHeaderView.swift */; };
+		1E3DF1C6245715FC00B25138 /* FYHomeSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3DF1C5245715FC00B25138 /* FYHomeSearchView.swift */; };
 		1E8F2B0824559577001A169B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8F2B0724559577001A169B /* AppDelegate.swift */; };
 		1E8F2B0A24559577001A169B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8F2B0924559577001A169B /* SceneDelegate.swift */; };
 		1E8F2B0F24559577001A169B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E8F2B0D24559577001A169B /* Main.storyboard */; };
@@ -62,6 +63,7 @@
 		1E3DF1AE2455D6AA00B25138 /* FYNavgationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FYNavgationController.swift; sourceTree = "<group>"; };
 		1E3DF1B0245674D000B25138 /* FYPageBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FYPageBaseViewController.swift; sourceTree = "<group>"; };
 		1E3DF1BD2456A43A00B25138 /* FYHomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FYHomeHeaderView.swift; sourceTree = "<group>"; };
+		1E3DF1C5245715FC00B25138 /* FYHomeSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FYHomeSearchView.swift; sourceTree = "<group>"; };
 		1E8F2B0424559577001A169B /* bangbangtang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bangbangtang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E8F2B0724559577001A169B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E8F2B0924559577001A169B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				1E3DF1BD2456A43A00B25138 /* FYHomeHeaderView.swift */,
+				1E3DF1C5245715FC00B25138 /* FYHomeSearchView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -563,6 +566,7 @@
 				1E3DF1BE2456A43A00B25138 /* FYHomeHeaderView.swift in Sources */,
 				1E8F2B6024559865001A169B /* FYHomeViewController.swift in Sources */,
 				1E3DF1A92455B78200B25138 /* FYFeedListViewController.swift in Sources */,
+				1E3DF1C6245715FC00B25138 /* FYHomeSearchView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
