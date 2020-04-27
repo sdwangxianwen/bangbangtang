@@ -1,0 +1,46 @@
+PODS:
+  - Alamofire (4.9.1)
+  - IQKeyboardManagerSwift (6.5.5)
+  - JXPagingView/Paging (2.0.3)
+  - JXSegmentedView (1.0.6)
+  - Kingfisher (4.10.1)
+  - Moya (13.0.1):
+    - Moya/Core (= 13.0.1)
+  - Moya/Core (13.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.1)
+  - Result (4.1.0)
+  - SnapKit (4.2.0)
+
+DEPENDENCIES:
+  - IQKeyboardManagerSwift
+  - JXPagingView/Paging
+  - JXSegmentedView
+  - Kingfisher
+  - Moya
+  - SnapKit
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - IQKeyboardManagerSwift
+    - JXPagingView
+    - JXSegmentedView
+    - Kingfisher
+    - Moya
+    - Result
+    - SnapKit
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
+  JXPagingView: 16f18d80bd79e0aab2e77fd8855211359e2506a4
+  JXSegmentedView: ceb6fb3a12716408bcd5c4210b93d947d079de25
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+
+PODFILE CHECKSUM: 5990e7242b0647bf87664c0ff2482f9dd2c908d1
+
+COCOAPODS: 1.9.0.beta.3

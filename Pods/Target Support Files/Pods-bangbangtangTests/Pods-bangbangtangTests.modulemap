@@ -1,0 +1,6 @@
+framework module Pods_bangbangtangTests {
+  umbrella header "Pods-bangbangtangTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
